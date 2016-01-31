@@ -78,6 +78,13 @@ are not currently booted from. Useful for installing firmware/kernel to a
 non-RPI customised image. Be careful, you must specify both options or neither.
 Specifying only one will not work.
 
+#### `DISTRIB`
+
+    sudo DISTRIB=debian rpi-update
+
+Adapt the location of boot files to distribution. Currently only `debian` is
+used (files going in `/boot/firmware`).
+
 #### `BRANCH`
 
 By default, clones the firmware files from the master branch, else uses the files

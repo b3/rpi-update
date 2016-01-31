@@ -20,6 +20,10 @@ else
 	NOOBS_CHECK=${NOOBS_CHECK:-0}
 fi
 
+if [[ "x${DISTRIB}" == "xdebian" ]]; then
+	BOOT_PATH="/boot/firmware"
+fi
+
 BRANCH=${BRANCH:-"master"}
 ROOT_PATH=${ROOT_PATH:-"/"}
 BOOT_PATH=${BOOT_PATH:-"/boot"}
